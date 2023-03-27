@@ -1,7 +1,7 @@
 import React from "react";
 
-const MovieCard = ({ movie, favorite, onClick }) => {
-  let heart = favorite ? <>💝</> : <>🤍</>;
+const MovieCard = ({ movie, isFavorite, onClick }) => {
+  let heart = isFavorite ? <>💝</> : <>🤍</>;
   return (
     <article className="card">
       <img

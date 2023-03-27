@@ -15,7 +15,7 @@ const Favorites = ({
       <Header
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
-        buttonTitle="../"
+        navigateTarget="../"
         searchCategory="favorite films"
       />
       <MovieList

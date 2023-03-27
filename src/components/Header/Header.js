@@ -1,7 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const Header = ({ searchTerm, setSearchTerm, buttonTitle, searchCategory }) => {
+const Header = ({
+  searchTerm,
+  setSearchTerm,
+  navigateTarget,
+  searchCategory,
+}) => {
   let placeholder = `🔍 ${searchCategory}`;
   let navigate = useNavigate();
   return (
@@ -12,10 +17,10 @@ const Header = ({ searchTerm, setSearchTerm, buttonTitle, searchCategory }) => {
           className="linkTo"
           onClick={() => {
             setSearchTerm("");
-            navigate(buttonTitle);
+            navigate(navigateTarget);
           }}
         >
-          {buttonTitle === "../" ? "Home" : "Favorites"}
+          {navigateTarget === "../" ? "Home" : "Favorites"}
         </button>
         <input
           placeholder={placeholder}

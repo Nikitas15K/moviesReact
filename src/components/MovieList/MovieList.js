@@ -1,5 +1,5 @@
 import React from "react";
-import { editIfMovieIsFavorite } from "../../services/services";
+import { editIfMovieIsFavorite } from "../../helpers/helpers";
 import MovieCard from "../MovieCard/MovieCard";
 
 const MovieList = ({
@@ -18,7 +18,7 @@ const MovieList = ({
           <MovieCard
             key={`${movie?.id},${movie?.title}`}
             movie={movie}
-            favorite={favoriteMovies?.includes(movie?.id)}
+            isFavorite={favoriteMovies?.includes(movie?.id)}
             onClick={() => {
               editIfMovieIsFavorite(
                 movie?.id,
