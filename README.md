@@ -1,3 +1,7 @@
+# Create an env file with 
+REACT_APP_API_BASE_URL = https://api.themoviedb.org/3/movie/top_rated
+REACT_APP_TMDB_API_KEY = <tmdb_api_key>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
